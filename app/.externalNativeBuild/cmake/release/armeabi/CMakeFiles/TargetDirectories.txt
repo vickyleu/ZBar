@@ -1,0 +1,4 @@
+C:/Develop/GitRepo/ZBarBuild/app/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/libiconv.dir
+C:/Develop/GitRepo/ZBarBuild/app/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/ZBarDecoder.dir
+C:/Develop/GitRepo/ZBarBuild/app/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/edit_cache.dir
+C:/Develop/GitRepo/ZBarBuild/app/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/rebuild_cache.dir

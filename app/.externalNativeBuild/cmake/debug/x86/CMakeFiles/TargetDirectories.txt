@@ -1,0 +1,4 @@
+C:/Develop/GitRepo/ZBarBuild/app/.externalNativeBuild/cmake/debug/x86/CMakeFiles/libiconv.dir
+C:/Develop/GitRepo/ZBarBuild/app/.externalNativeBuild/cmake/debug/x86/CMakeFiles/ZBarDecoder.dir
+C:/Develop/GitRepo/ZBarBuild/app/.externalNativeBuild/cmake/debug/x86/CMakeFiles/edit_cache.dir
+C:/Develop/GitRepo/ZBarBuild/app/.externalNativeBuild/cmake/debug/x86/CMakeFiles/rebuild_cache.dir
