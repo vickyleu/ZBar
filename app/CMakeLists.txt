@@ -1,11 +1,9 @@
 cmake_minimum_required(VERSION 3.4.1)
 
-
-
 ############<<<<<<<<<<<<<Iconv>>>>>>>>>>>>>>>>##########
 #######################################################
 #######################################################
-add_library(iconv SHARED
+add_library(iconv STATIC
                            src/main/cpp/iconv/lib/iconv.c
                            	src/main/cpp/iconv/libcharset/lib/localcharset.c
                            	src/main/cpp/iconv/lib/relocatable.c)
@@ -20,13 +18,9 @@ target_include_directories(iconv PUBLIC
 #######################################################
 ############<<<<<<<<<<<<<Iconv>>>>>>>>>>>>>>>>##########
 
-
-
-
 ############<<<<<<<<<<<<<Zbar>>>>>>>>>>>>>>>>##########
 #######################################################
 #######################################################
-
 add_library(Zbar SHARED
 src/main/cpp/zbarjni.c
 src/main/cpp/zbar/img_scanner.c
@@ -63,10 +57,7 @@ target_include_directories(Zbar PUBLIC
 #######################################################
 #######################################################
 ############<<<<<<<<<<<<<Zbar>>>>>>>>>>>>>>>>##########
-
 find_library(llog  log)
-#target_link_libraries(iconv ${libcharset} )
-target_link_libraries(Zbar iconv  ${llog}  ##${libcharset}
-)
+target_link_libraries(Zbar iconv  ${llog})
 
 
