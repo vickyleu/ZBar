@@ -55,7 +55,7 @@ src/main/cpp/zbar/qrcode/qrdec.c
 src/main/cpp/zbar/qrcode/qrdectxt.c 
 src/main/cpp/zbar/qrcode/rs.c 
 src/main/cpp/zbar/qrcode/util.c)
-
+set(CMAKE_CXX_FLAGS "liconv  ${CMAKE_CXX_FLAGS}")
 target_include_directories(ZBarDecoder PUBLIC
                 src/main/cpp/include
 			    src/main/cpp/zbar
@@ -66,7 +66,7 @@ target_include_directories(ZBarDecoder PUBLIC
 
 find_library(llog  log)
 #target_link_libraries(libiconv ${libcharset} )
-target_link_libraries(ZBarDecoder ${libiconv}  ${llog}  ##${libcharset}
+target_link_libraries(ZBarDecoder libiconv  ${llog}  ##${libcharset}
 )
 
 
